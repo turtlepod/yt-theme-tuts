@@ -1,3 +1,76 @@
 /**
  * Theme Name: Tuts
-**/
+ */
+
+body {
+	font-family: sans-serif;
+}
+#container {
+	max-width: 700px;
+	margin: 50px auto;
+	border: 2px solid #ccc;
+}
+#site-header {
+	padding: 30px;
+	text-align: center;
+	border-bottom: 2px solid #ccc;
+}
+#site-header h1 {
+	margin: 0;
+}
+#primary-navigation {
+	text-align: center;
+	padding: 10px;
+	border-bottom: 2px solid #ccc;
+}
+#primary-navigation ul {
+	list-style: none;
+}
+#primary-navigation ul li {
+	display: inline-block;
+}
+#primary-navigation ul li a{
+	padding: 10px 20px;
+	color: #fff;
+	background: #000;
+	text-decoration: none;
+}
+#primary-navigation ul li a:hover{
+	background: #555;
+}
+#site-content {
+	padding: 30px;
+	border-bottom: 2px solid #ccc;
+}
+.pagination {
+	text-align: center;
+	padding: 10px;
+	border-bottom: 2px solid #ccc;
+}
+.pagination .page-numbers {
+	display: none;
+}
+.pagination .next,
+.pagination .prev {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	padding: 10px 20px;
+}
+#site-footer {
+	padding: 30px;
+	text-align: center;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
