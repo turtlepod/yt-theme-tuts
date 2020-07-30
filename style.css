@@ -15,8 +15,16 @@ body {
 	text-align: center;
 	border-bottom: 2px solid #ccc;
 }
-#site-header h1 {
+#site-title {
 	margin: 0;
+	padding: 0;
+}
+#site-title a {
+	font-size: 35px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
 #primary-navigation {
 	text-align: center;
