@@ -5,9 +5,21 @@
 
 /**
  * Theme Setup.
+ *
+ * @link https://developer.wordpress.org/reference/hooks/after_setup_theme/
  */
 function tuts_setup() {
+	// Title tag.
 	add_theme_support( 'title-tag' );
+
+	// Custom Logo.
+	add_theme_support( 'custom-logo', [
+		'height'      => 100,
+		'width'       => 200,
+		'flex-height' => true,
+		'flex-width'  => true,
+		'header-text' => [ 'site-title-text' ],
+	] );
 }
 add_action( 'after_setup_theme', 'tuts_setup' );
 

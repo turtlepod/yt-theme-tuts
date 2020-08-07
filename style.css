@@ -26,6 +26,9 @@ body {
 	padding: 0;
 	text-decoration: none;
 }
+.custom-logo-link {
+	display: block;
+}
 #primary-navigation {
 	text-align: center;
 	padding: 10px;

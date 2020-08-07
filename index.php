@@ -8,9 +8,15 @@
 <div id="container">
 	<header id="site-header">
 		<?php if ( is_home() ) : ?>
-			<h1 id="site-title"><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 id="site-title">
+				<?php the_custom_logo(); ?>
+				<a href="<?php echo esc_url( home_url() ); ?>"><span class="site-title-text"><?php bloginfo( 'name' ); ?></span></a>
+			</h1>
 		<?php else : ?>
-			<p id="site-title"><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+			<p id="site-title">
+				<?php the_custom_logo(); ?>
+				<a href="<?php echo esc_url( home_url() ); ?>"><span class="site-title-text"><?php bloginfo( 'name' ); ?></span></a>
+			</p>
 		<?php endif; ?>
 	</header>
 	<?php
